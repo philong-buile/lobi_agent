@@ -1,0 +1,25 @@
+# --- OpenClaw real config & state (contains secrets) — NEVER commit ---
+openclaw.json
+openclaw.json.*
+*.last-good
+.openclaw/
+credentials/
+*.sqlite
+*.sqlite-*
+
+# --- Secrets / env ---
+.env
+.env.*
+*.token
+secrets/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- OS / editor cruft ---
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
+*.swp

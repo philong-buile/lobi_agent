@@ -1,0 +1,64 @@
+{
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "token": "REPLACE_WITH_RANDOM_TOKEN_OR_LET_SETUP_GENERATE"
+    },
+    "mode": "local",
+    "port": 18789,
+    "bind": "loopback"
+  },
+  "agents": {
+    "defaults": {
+      "workspace": "C:\\Users\\<YOU>\\.openclaw\\workspace",
+      "models": {
+        "anthropic/claude-opus-4-8": {
+          "agentRuntime": { "id": "claude-cli" }
+        },
+        "anthropic/claude-sonnet-4-6": {
+          "agentRuntime": { "id": "claude-cli" }
+        }
+      },
+      "model": {
+        "primary": "anthropic/claude-sonnet-4-6"
+      }
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "tools": {
+    "profile": "coding",
+    "web": {
+      "search": { "provider": "parallel-free", "enabled": true }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "anthropic": { "enabled": true },
+      "telegram": { "enabled": true },
+      "parallel": { "enabled": true }
+    }
+  },
+  "auth": {
+    "profiles": {
+      "anthropic:claude-cli": {
+        "provider": "claude-cli",
+        "mode": "oauth"
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "botToken": "REPLACE_WITH_YOUR_TELEGRAM_BOT_TOKEN",
+      "dmPolicy": "pairing",
+      "groups": {
+        "*": { "requireMention": true }
+      }
+    }
+  },
+  "commands": {
+    "ownerAllowFrom": ["telegram:REPLACE_WITH_YOUR_TELEGRAM_USER_ID"]
+  }
+}
