@@ -4,9 +4,9 @@
 </picture>
 
 <p>
-  <img alt="Platform: Windows 10 and 11" src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-2b7fb8?style=flat-square">
+  <a href="./LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-2b7fb8?style=flat-square"></a>
+  <img alt="Platform: Windows 10 and 11" src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-3f3f46?style=flat-square">
   <img alt="Channel: Telegram" src="https://img.shields.io/badge/channel-Telegram-3f3f46?style=flat-square">
-  <img alt="Runtime: Claude Code CLI" src="https://img.shields.io/badge/runtime-Claude%20Code%20CLI-3f3f46?style=flat-square">
 </p>
 
 Lobi ([@lobi_ai_bot](https://t.me/lobi_ai_bot)) is a personal AI agent you message on Telegram. It runs on your own Windows machine through [OpenClaw](https://openclaw.ai) and the Claude Code CLI with Claude Sonnet 4.6, so it can read files and run commands there. It reuses your Claude Code login, so no API key is needed.
@@ -154,3 +154,7 @@ $t | Set-ScheduledTask
 - [Telegram channel](https://docs.openclaw.ai/channels/telegram)
 - [Claude CLI backend](https://docs.openclaw.ai/gateway/cli-backends)
 - [Claude Code](https://claude.com/product/claude-code)
+
+## License
+
+[MIT](./LICENSE)
